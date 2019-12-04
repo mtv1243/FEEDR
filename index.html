@@ -8,23 +8,28 @@
   <title>feedR</title>
 </head>
 <body>
-  <p>
-     <label>Country: </label>
-     <select id = "user-dropdown">
-       <option value = "0" selected="selected">one</option>
-       <option value = "1">two</option>
-       <option value = "2">three</option>
-       <option value = "3">four</option>
-       <option value = "4">five</option>
-       <option value = "5">six</option>
-       <option value = "6">seven</option>
-       <option value = "7">eight</option>
-       <option value = "8">nine</option>
-       <option value = "9">ten</option>
+     <select id = "search-dropdown">
+       <option value = "country=us" selected="selected">US News</option>
+       <option value = "">World News</option>
      </select>
-     <button class='findUserButton'>Find User</button>
-  </p>
-<input type="text" value="Search terms"><button id="search-button">Search</button>
+
+<input id="search-topic" type="text" value="" placeholder="Search topic">
+<button id="search-button">Search</button>
+
+<span id="loading" class="hide">Loading...</span>
+<p>If left blank, all results will be returned.</p>
+
+<article>
+  <h4 class="title">Headline</h4>
+  <span class="by">by </span>
+  <span class="author">author</span>
+  <span class="at"> at </span>
+  <span class="source">source</span>
+  <p class="description">description</p>
+  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis autem laudantium quasi accusantium illo dolor reiciendis, deserunt nihil eligendi dolorem iusto, repellendus molestias ex quae deleniti temporibus esse rerum debitis?</p>
+  <div class="read-more">read more</div>
+
+</article>
 
 <script src="app.js"></script>
 </body>
