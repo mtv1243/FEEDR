@@ -5,32 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>feedR</title>
+  <title>FEEDR</title>
 </head>
 <body>
-     <select id = "search-dropdown">
+  <!-- script libraries -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<h3 class="top-headlines-title">Top US Headlines</h3>
+  <div id="top-headline-articles">
+<p class="loading-top-articles">Loading Top Articles...</p>
+  <!-- <article>
+    <img class="img" src="" alt="">
+    <h4 class="title">Headline</h4>
+    <span class="by">by </span>
+    <span class="author">author</span>
+    <span class="at"> at </span>
+    <span class="source">source</span>
+    <p class="description">description</p>
+    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis autem laudantium quasi accusantium illo dolor reiciendis, deserunt nihil eligendi dolorem iusto, repellendus molestias ex quae deleniti temporibus esse rerum debitis?</p>
+    <span class="read-more">read more</span>
+  </article> -->
+  </div>
+     <!-- <select id = "search-dropdown">
        <option value = "country=us" selected="selected">US News</option>
        <option value = "">World News</option>
-     </select>
-
+     </select> -->
+     <main>
 <input id="search-topic" type="text" value="" placeholder="Search topic">
-<button id="search-button">Search</button>
+<button id="guardian-search-button">Search The Gurdian</button>
 
 <span id="loading" class="hide">Loading...</span>
 <p>If left blank, all results will be returned.</p>
 
-<div id="top-headline-articles">
-<article>
-  <h4 class="title">Headline</h4>
-  <span class="by">by </span>
-  <span class="author">author</span>
-  <span class="at"> at </span>
-  <span class="source">source</span>
-  <p class="description">description</p>
-  <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis autem laudantium quasi accusantium illo dolor reiciendis, deserunt nihil eligendi dolorem iusto, repellendus molestias ex quae deleniti temporibus esse rerum debitis?</p>
-  <div class="read-more">read more</div>
-</article>
-</div>
+</main>
 
 <script src="app.js"></script>
 </body>

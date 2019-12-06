@@ -1,3 +1,99 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*
+_________________________
+TOP HEADLINES STYLES
+_______________
+*/
+
+#top-headline-articles::-webkit-scrollbar{
+    width:0;
+    background-color:transparent;
+}
+
 .hide {
   display: none;
+}
+
+.top-headlines-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+#top-headline-articles {
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #E8E8E8;
+}
+
+.top-headline-anchor {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+article {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  background-color: #fff;
+  transition: background-color, .2s;
+  padding: 5px;
+  height: 8em;
+  color: #6B0F13;
+}
+
+article:hover {
+  background-color: #E0E0E0;
+  text-decoration: underline;
+}
+
+article > a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.img {
+  width: 100px;
+  height: 60px;
+  margin: 0;
+  object-fit: cover;
+}
+
+h4.title, .source {
+  font-weight: 300;
+  margin: 0;
+  font-size: .75rem;
+}
+
+.source {
+  display: inline-block;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+/*
+_______________________
+SEARCH BAR STYLES
+________________
+*/
+
+main {
+  margin-top: 2em;
+}
+
+#search-topic {
+  margin-top: 20px;
 }
